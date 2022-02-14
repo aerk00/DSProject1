@@ -19,5 +19,5 @@ cv = RepeatedKFold(n_splits= 10, n_repeats= 3, random_state= 1)
 scores = cross_val_score(las, X, y, scoring= 'neg_mean_absolute_error', cv = cv, n_jobs = -1)
 scores = absolute(scores)
 
-print('Mean MAE: %.3f (%.3f)' % (mean(scores), std(scores)))
+
 
